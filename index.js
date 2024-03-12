@@ -167,7 +167,7 @@ const socketIO = require('socket.io');
 
 const app = express();
 const port = process.env.PORT || 4000;
-const { PORT, DB_HOST, DB_USER, DB_PASSWORD, DB_NAME, DB_PORT } = require('../server/config');
+const { PORT, DB_HOST, DB_USER, DB_PASSWORD, DB_NAME, DB_PORT } = require('./config.js');
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', 'https://cristiansanchez2715.github.io');
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
